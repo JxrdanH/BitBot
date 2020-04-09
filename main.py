@@ -3,8 +3,6 @@ from discord.ext import commands
 from discord.ext.commands import has_permissions
 import os
 
-#Dev_Commands gives an error when loading main.py; fix this
-
 client = commands.Bot(command_prefix = '?')
 
 @client.event
@@ -26,4 +24,4 @@ for filename in os.listdir('./cogs'):
     if filename.endswith('.py'):
         client.load_extension(f'cogs.{filename[:-3]}')
 
-client.run('Njk2MDc4MDE1Mjg4ODM2MTE4.XojfSg.dtVTb6bPq7mxiCTM_dz0rdTcCJ0')
+client.run('')
